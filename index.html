@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGUIA DOURADA</title>
+    <link rel="stylesheet" href="./src/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./src/img/logo.png" alt="Loja xamanismo">
+        </div>
+        <div id="cart-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>Carrinho de Compras</h2>
+                <div id="cart-items"></div>
+                <p>Total: R$ <span id="cart-total">0.00</span></p>
+                <label>
+                    <input type="checkbox" id="frete-combinar">
+                    Frete a combinar
+                </label>
+                <button id="finalize-purchase">Finalizar Compra</button>
+            </div>
+        </div>
+    
+        <div id="purchase-summary" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>Resumo da Compra</h2>
+                <div id="purchase-items"></div>
+                <p>Total: R$ <span id="purchase-total">0.00</span></p>
+            </div>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#cartomancia">Cartomancia</a></li>
+                <li><a href="#rapes">Rapés</a></li>
+                <li><a href="#Ayahuasca">Ayahuasca</a></li>
+            </ul>
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <div class="cart-icon">
+            <img src="./src/img/cart-icon.png" alt="Carrinho de Compras">
+        </div>
+    </header>
+    <section class="banner">
+        <h1>Sejam Bem Vindos</h1>
+        <p>Aqui Na Nossa Loja Aguia Dourada Vendemos Rapes,Ayahuasca,Consultas com os oraculos,diversos artigos religiosos e xamanicos e etc...</p>
+    </section>
+    <section class="apresentacao">
+        <h2>Sobre Nós</h2>
+        <p>somos uma familia universalista,adeptos a todas as crenças,visando o respeito de todos nossos irmãos</p>
+        <p>Valores: Qualidade, Integridade, Inovação e Excelência no Atendimento.</p>
+    </section>
+    <section id="cartomancia" class="produtos">
+        <h2>Cartomancia</h2>
+        <div class="produtos-lista">
+            <div class="produto">
+                <img src="./src/img/cartomancia.jpg" alt="Produto 1">
+                <p>cartomancia</p>
+                <p>R$ 29,99</p>
+                <p class="descricao">a cartomancia é uma forma de indicar os caminhos,ajudar tomar decisões,e etc...</p>
+                <button class="add-to-cart" data-id="1" data-name="cartomancia" data-price="29.99">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </section>
+    <section id="rapes" class="produtos">
+        <h2>Rapés</h2>
+        <div class="produtos-lista">
+            <div class="produto">
+                <img src="./src/img/rape.jpg" alt="Produto 2">
+                <p>Rapé</p>
+                <p>R$ 70,00</p>
+                <p class="descricao">o rapé é uma medicina sacrada xamanica feita com tabaco e cinzas de raizes e plantas. Tem como objetivo trabalhar com questões físicas, mentais, emocionais e espirituais.</p>
+                <button class="add-to-cart" data-id="2" data-name="Rapé" data-price="70.00">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </section>
+    <section id="Ayahuasca" class="produtos">
+        <h2>Ayahuasca</h2>
+        <div class="produtos-lista">
+            <div class="produto">
+                <img src="./src/img/Ayahuasca.jpg" alt="Produto 2">
+                <p>Ayahuasca</p>
+                <p>R$ 300,00</p>
+                <p class="descricao">Ayahuasca é um chá com potencial alucinógeno capaz de provocar alterações na consciência por um período de até 10 horas. Algumas religiões usam a bebida em seus cultos como forma de abrir a mente e criar visões místicas.</p>
+                <button class="add-to-cart" data-id="3" data-name="Ayahuasca" data-price="300.00">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </section>
+    <section id="religiosos" class="produtos">
+        <h2>Artigos Religiosos</h2>
+        <div class="produtos-lista">
+            <div class="produto">
+                <img src="./src/img/religiosos.jpg" alt="Produto 2">
+                <p>Artigos Religiosos</p>
+                <p>R$ 300,00</p>
+                <p class="descricao"></p>
+                <button class="add-to-cart" data-id="4" data-name="Artigos Religiosos" data-price="300.00">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <!-- Conteúdo do rodapé -->
+    </footer>
+    <a href="https://wa.me/5511948604360" class="whatsapp-button" target="_blank">
+        <img src="./src/img/whatsapp-icon.png" alt="WhatsApp">
+    </a>
+    
+  
+
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="./src/Script/scripts.js"></script>
+</body>
+</html>
